@@ -1,6 +1,7 @@
 package com.bibliotech.core.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import com.bibliotech.core.model.Book;
@@ -36,6 +37,7 @@ public class BookCategoryController {
     }
     
     @PostMapping
+    @PreAuthorize("hasRole('librarian')")
     public BookCategory saveCategory(@RequestBody BookCategoryRequest categoryRequest) {
         // Create a BookCategory instance from the request
         BookCategory category = new BookCategory();
