@@ -1,0 +1,11 @@
+com\bibliotech\core\controller\BookCategoryController.class
+com\bibliotech\core\controller\BookController.class
+com\bibliotech\core\request\BookCategoryRequest.class
+com\bibliotech\core\repository\BookCategoryRepository.class
+com\bibliotech\core\service\BookService.class
+com\bibliotech\core\service\BookCategoryService.class
+com\bibliotech\core\repository\BookRepository.class
+com\bibliotech\core\request\BookRequest.class
+com\bibliotech\core\BibliotechApplication.class
+com\bibliotech\core\model\Book.class
+com\bibliotech\core\model\BookCategory.class
